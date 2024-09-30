@@ -6,7 +6,34 @@
     <title>Basic Layout 3</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4fr 1fr 1fr;
+        gap: 1vw;
+        grid-template-areas:
+          	"main main"
+            "footer footer"
+            "head nav"
+
+      }
+
+      #basic-layout-3 header {
+        grid-area: head;
+      }
+
+      #basic-layout-3 nav {
+         grid-area: nav;
+      }
+
+      #basic-layout-3 footer {
+        grid-area: footer;
+      }
+
+      #basic-layout-3 main {
+        grid-area: main;
+      }
+
     </style>
   </head>
   <body id="basic-layout-3">
