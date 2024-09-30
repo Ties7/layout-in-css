@@ -8,8 +8,36 @@
     <style>
       body {
         display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 4fr 1fr;
+        gap: 1vw;
+        grid-template-areas:
+          	"head head"
+            "nav main"
+            "footer footer"
+
       }
-      /* Doe hier jouw ding! */
+
+      #basic-layout-1 header {
+        /* grid-column-start: 1;
+        grid-column-end: -1; */
+        grid-area: head;
+      }
+
+      #basic-layout-1 nav {
+         grid-area: nav;
+      }
+
+      #basic-layout-1 footer {
+        /* grid-column-start: 1;
+        grid-column-end: -1; */
+        grid-area: footer;
+      }
+
+      #basic-layout-1 main {
+        grid-area: main;
+      }
+
     </style>
   </head>
   <body id="basic-layout-1">
